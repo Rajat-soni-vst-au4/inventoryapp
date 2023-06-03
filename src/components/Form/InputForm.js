@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import ProductShow from '../ProductShow/ProductShow';
 
 import NewProductForm from './NewProductForm';
 
@@ -25,6 +26,7 @@ const data = (enterProductDes,enterProductName,enterProductPrice) =>{
   return (
     <div>
         <NewProductForm getData= {data}/>
+        <ProductShow FinalData = {dataList}/>
     </div>
   )
 }

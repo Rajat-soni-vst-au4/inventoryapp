@@ -1,4 +1,5 @@
 import './App.css';
+import Button from './components/Button/Button';
 import InputForm from './components/Form/InputForm';
 import Header from './components/Header/Header';
 
