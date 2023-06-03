@@ -3,10 +3,13 @@ import ProductShow from '../ProductShow/ProductShow';
 
 import NewProductForm from './NewProductForm';
 
+
+
 const InputForm = () => {
+   
     const [dataList, setDataList] = useState([]);
 
-    console.log("data", dataList)
+    // console.log("data", dataList)
 
     useEffect(() => {
       localStorage.setItem("Data",JSON.stringify(dataList))

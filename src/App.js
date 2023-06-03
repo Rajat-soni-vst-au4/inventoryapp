@@ -1,14 +1,15 @@
 import './App.css';
-import Button from './components/Button/Button';
+
 import InputForm from './components/Form/InputForm';
 import Header from './components/Header/Header';
+import CartProvider from './components/Store/CartProvider';
 
 function App() {
   return (
-    <div className="App">
+    <CartProvider className="App">
     <div className='Header'><Header /></div>
    <div className='InputForm'> <InputForm /></div>
-    </div>
+    </CartProvider>
   );
 }
 
