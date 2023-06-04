@@ -1,35 +1,28 @@
-import React, {useState, useEffect} from 'react';
-import ProductShow from '../ProductShow/ProductShow';
+import React from 'react';
 
 import NewProductForm from './NewProductForm';
 
 
+const InputForm = ({InputData}) => {
 
-const InputForm = () => {
-   
-    const [dataList, setDataList] = useState([]);
-
-    // console.log("data", dataList)
-
-    useEffect(() => {
-      localStorage.setItem("Data",JSON.stringify(dataList))
-
-    }, [dataList])
+    let countId = 0;
 
 const data = (enterProductDes,enterProductName,enterProductPrice) =>{
+
     let SingleData = {
+        id: countId+1,
         productDes: enterProductDes,
         productName: enterProductName,
         productPrice: enterProductPrice,
     }
-
-    setDataList(prev => [...prev, SingleData]);
-
+    
+    InputData(SingleData);
+    countId++;
 }
+   
   return (
     <div>
-        <NewProductForm getData= {data}/>
-        <ProductShow FinalData = {dataList}/>
+        <NewProductForm getData={data}/>
     </div>
   )
 }

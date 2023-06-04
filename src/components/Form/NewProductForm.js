@@ -1,13 +1,16 @@
 import React,{useState} from 'react';
 
 function NewProductForm( {getData}) {
+
     const [enterProductDes, setEnterProductDes] = useState("")
     const [enterProductName, setEnterProductName] = useState("")
     const [enterProductPrice, setEnterProductPrice] = useState("")
 
     const CollectInputData =(e) =>{
         e.preventDefault()
-        getData(enterProductDes,enterProductName,enterProductPrice)
+
+        getData(enterProductDes,enterProductName,enterProductPrice);
+        
         setEnterProductDes("")
         setEnterProductName("")
         setEnterProductPrice("")
