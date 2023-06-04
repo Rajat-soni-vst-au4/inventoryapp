@@ -13,25 +13,18 @@ const CartProvider = (props) => {
   const addOneItem = (e,dataId) => {
     setButtonOne(1);
     setDataId(prev => [...prev,dataId])
-    console.log("1",dataId);
   }
   const addTwoItem = (e,dataId) => {
     setButtonTwo(2);
     setDataId(prev => [...prev,dataId]);
     setDataId(prev => [...prev,dataId]);
-    console.log("2",dataId);
   }
   const addThreeItem = (e,dataId) => {
     setButtonThree(3);
-   console.log("button", buttonThree);
-   console.log("3")
 
     setDataId(prev => [...prev,dataId]);
-    console.log("1",dataId);
     setDataId(prev => [...prev,dataId]);
-    console.log("2",dataId);
     setDataId(prev => [...prev,dataId]);
-    console.log("all",dataId);
   };
 
   const cart =  {

@@ -6,7 +6,6 @@ import CartIcon from "./CartIcon";
 
 const Cart = () => {
 const ctx = useContext(CartContext);
-console.log(ctx.items)
   return (
     <>
         <button className={classes.button}>

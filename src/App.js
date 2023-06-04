@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import ProductShow from "./components/ProductShow/ProductShow";
 import CartProvider from "./components/Store/CartProvider";
 
+
 function App() {
  
   const [CollectionOfData, setCollectionOfData] = useState([]);
@@ -14,6 +15,7 @@ function App() {
     setCollectionOfData([...CollectionOfData,SingleData]);
     
   };
+
 
   return (
     <CartProvider className="App">
